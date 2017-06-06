@@ -14,6 +14,8 @@
 		1F548E461EE64E35006D18CF /* YYCardSliderDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F548E441EE64E35006D18CF /* YYCardSliderDemo.xcdatamodeld */; };
 		1F548E481EE64E35006D18CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F548E471EE64E35006D18CF /* Assets.xcassets */; };
 		1F548E4B1EE64E35006D18CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F548E491EE64E35006D18CF /* LaunchScreen.storyboard */; };
+		1F548E841EE67A6E006D18CF /* YYCardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F548E831EE67A6E006D18CF /* YYCardContainer.m */; };
+		1F548E871EE67D72006D18CF /* YYCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F548E861EE67D72006D18CF /* YYCardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		1F548E471EE64E35006D18CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F548E4A1EE64E35006D18CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F548E4C1EE64E36006D18CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F548E821EE67A6E006D18CF /* YYCardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCardContainer.h; sourceTree = "<group>"; };
+		1F548E831EE67A6E006D18CF /* YYCardContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCardContainer.m; sourceTree = "<group>"; };
+		1F548E851EE67D72006D18CF /* YYCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCardView.h; sourceTree = "<group>"; };
+		1F548E861EE67D72006D18CF /* YYCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		1F548E371EE64E34006D18CF /* YYCardSliderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1F548E521EE65711006D18CF /* Library */,
 				1F548E3B1EE64E34006D18CF /* AppDelegate.h */,
 				1F548E3C1EE64E34006D18CF /* AppDelegate.m */,
 				1F548E3E1EE64E34006D18CF /* ViewController.h */,
@@ -80,6 +87,25 @@
 				1F548E391EE64E34006D18CF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F548E521EE65711006D18CF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				1F548E811EE67A31006D18CF /* YYCardView */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		1F548E811EE67A31006D18CF /* YYCardView */ = {
+			isa = PBXGroup;
+			children = (
+				1F548E821EE67A6E006D18CF /* YYCardContainer.h */,
+				1F548E831EE67A6E006D18CF /* YYCardContainer.m */,
+				1F548E851EE67D72006D18CF /* YYCardView.h */,
+				1F548E861EE67D72006D18CF /* YYCardView.m */,
+			);
+			path = YYCardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +182,8 @@
 			files = (
 				1F548E401EE64E34006D18CF /* ViewController.m in Sources */,
 				1F548E461EE64E35006D18CF /* YYCardSliderDemo.xcdatamodeld in Sources */,
+				1F548E841EE67A6E006D18CF /* YYCardContainer.m in Sources */,
+				1F548E871EE67D72006D18CF /* YYCardView.m in Sources */,
 				1F548E3D1EE64E34006D18CF /* AppDelegate.m in Sources */,
 				1F548E3A1EE64E34006D18CF /* main.m in Sources */,
 			);
@@ -281,6 +309,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q4U65JAZSA;
 				INFOPLIST_FILE = YYCardSliderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ueb.newfrog.YYCardSliderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,6 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q4U65JAZSA;
 				INFOPLIST_FILE = YYCardSliderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ueb.newfrog.YYCardSliderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
